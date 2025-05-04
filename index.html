@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F.js</title>
+        <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+
+        <script src="dist/F.js"></script>
+        <script src="dist/plot.js"></script>
+    </head>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 10px;
+            font-size: 1em;
+            margin: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #graph {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+    <body>
+        <p>カンマ区切りで入力。</p>
+        <input type="text" id="A" placeholder="A" />
+        <input type="text" id="B" placeholder="B" />
+        <button id="calculate">計算する!</button>
+        <div id="graph"></div>
+
+        <script src="dist/run.js"></script>
+    </body>
+</html>
